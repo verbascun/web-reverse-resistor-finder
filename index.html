@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<Head>
+<title>web_resistor_calculator</title>
+<meta   charset =   "UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="" />
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+</Head>
+<body>
+    <script src = "script.js"> </script>
+  
+  
+
+    <label for="targetResistance">Target resistance:</label> 
+    <input type="text"  placeholder="target resistance" id = "targetResistance">
+    <label for="maxError">Max Tolerance:</label> 
+    <input type="text" id = "maxError" name = "maxError" value = "5">
+       
+    <button type = "button" onclick = "showResults();"> Find resistors</button>
+
+
+    <fieldset>
+      <legend> Series </legend>
+      <input type="radio" name="series" id="e12" value = "e12" checked="checked">E12
+      <input type="radio" name="series" id="e24" value = "e24">E24
+    </fieldset>
+    <table>
+    
+    </table>
+    
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
