@@ -18,6 +18,18 @@ label {
 input{
 
 
+    
+}
+
+div {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-items: space-around;
+    border-style: solid;
+    border-color: black ;
+
 }
 button {
     margin: 0.5%
@@ -36,19 +48,20 @@ table {
 }
 
 td {
-    border: 1px solid;
+    /* border: 1px solid; */
     padding-left: 10px;
     padding-right: 10px;
 
 }
 th {
-    border: 1px solid;
+    /* border: 1px solid; */
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-radius: 50px;
 
 }
 
-tr:nth-child(even){background-color:#dafdc8;}
-tr:hover{background-color: antiquewhite;}
+tr:nth-child(even){background-color:#2b2b2b; color: aliceblue;}
+tr:hover{background-color: #457278;}
