@@ -11,31 +11,71 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </Head>
 <body>
-    <script src = "script.js"> </script>
-    <!-- <script  src = "findResistors.js" type="module"> </script> -->
-
-  
-  
-
-    <label for="targetResistance">Target resistance:</label> 
-    <input type="text"  placeholder="target resistance" id = "targetResistance">
-    <label for="maxError">Max Tolerance:</label> 
-    <input type="text" id = "maxError" name = "maxError" value = "5">
-       
-    <button type = "button" onclick = "showResults();"> Find resistors</button>
 
 
-    <fieldset>
-      <legend> Series </legend>
-      <input type="radio" name="series" id="e12" value = "e12" checked="checked">E12
-      <input type="radio" name="series" id="e24" value = "e24">E24
-    </fieldset>
+
+  <h1>Parallel and Series reverse resistor finder</h1>
+  <!-- <p>Goal of this simple app is to find a specific resistor value using two serial or parallel connected resistors</p> -->
+
+  <label for="targetResistance"><strong>Target resistance:</strong></label> 
+  <input type="text"  placeholder="target resistance" id = "targetResistance">
+
+     
+  <button  id="findButton"> Find resistors</button>
 
 
-    <div id = "tables">
+  <fieldset>
+    <legend> Series </legend>
+    <input type="radio" name="series" id="e12" value = "e12" checked="checked">E12
+    <input type="radio" name="series" id="e24" value = "e24">E24
+  </fieldset>
+
+
+<div class="results">
+  <div class="column">
+    <svg class="schematic"   viewBox="0 0 810 310  " xmlns="http://www.w3.org/2000/svg">
+      <rect x= "255" y= "5"   width="300" height= "100"     fill="none" stroke-width="10"    stroke="rgb(0,0,0)"  stroke-linejoin="round"/>
+      <text x= "405" y= "55" class = "r1_text">R1</text>    
+      <rect x= "255" y= "205" width="300" height= "100"     fill="none" stroke-width="10"    stroke="rgb(0,0,0)"  stroke-linejoin="round"/>
+      <text x= "405" y= "255" class = "r2_text">R2</text> 
+      <path width="50%" height= "50%"   d="M255 55H105v205h155m295 0h145v-205h-145"    fill= "none" stroke="#000"
+      stroke-width="10" stroke-linejoin= "round">
+    </svg>  
+    <table class="resultsTable"></table> 
+  </div>
+
+  <div class="column">
+  <svg class="schematic"   viewBox="0 0 810 310  " xmlns="http://www.w3.org/2000/svg">
+    <rect x= "55" y= "100"   width="300" height= "100"     fill="none" stroke-width="10"    stroke="rgb(0,0,0)"  stroke-linejoin="round"/>
+    <text x= "205" y= "150" class = "r1_text">R1</text>    
+    <rect x= "455" y= "100" width="300" height= "100"     fill="none" stroke-width="10"    stroke="rgb(0,0,0)"  stroke-linejoin="round"/>
+    <text x= "605" y= "150" class = "r2_text">R2</text> 
+    <path width="50%" height= "50%"   d="M355 150 H455 "    fill= "none" stroke="#000"
+    stroke-width="10" stroke-linejoin= "round">
+  </svg>  
+  <table class="resultsTable"></table> 
+
+  </div>
+
  
+</div>
 
-    </div>
+
+
+      
+      <table id = "tables">
+
+        <thead>
+
+          
+          
+
+  
+        </thead>
+      </table>
+
+       
+  
     
 
 
@@ -47,12 +87,17 @@
 
 
 
+
+
+
+
+
+
+<footer>
+  <p>v0.1.0 <a href="https://github.com/verbascun">verbascun@github</a></p>
+</footer>
+
+<script type="text/javascript" src="script.js"></script>
+
 </body>
-
-
-
-
-
-
-
-</html>
+</html> 
