@@ -9,10 +9,7 @@ let equations= ["1/(1/R1 + 1/R2)","R1+R2"];
 
 
 
-document.getElementById("findButton").addEventListener("click", showResults); 
-
-
-console.log("MIDDLE OF SCRIPT")
+document.getElementById("findButton").addEventListener("click", checkTargetValue); 
 
 
 function showResults(){
@@ -30,6 +27,17 @@ function showResults(){
   {
     selectedSeries = selectedSeries.concat(e12Series)
     console.log("e12eries seleced",selectedSeries)
+
+
+    // for (let i = 0; i <= length*6-1; i++) { 
+    //     e12Series[12+i] = e12Series[i]*10      
+    //    }
+    
+    
+    // console.log(e12Series)
+    
+    
+    // showResults();
     selectedSeries = calculateSeries(selectedSeries)
 
      }
@@ -132,3 +140,29 @@ function findResistors(equation, targetResistance, resistorSeries){
 
                 console.log("END OF SCRIPT")  
 
+
+                // .addEventListener("click", showResults); 
+
+
+
+                function checkTargetValue() {
+                  // Get the value of the input field with id="numb"
+                  let targetResistance  = document.getElementById("targetResistance").value;
+                  // If x is Not a Number or less than one or greater than 10
+                  let text;
+                  if (isNaN(targetResistance) || targetResistance <= 1 || targetResistance > 9999999) {
+                    text = "Insert a number between 1 and 9999999";
+                    let tables = document.getElementsByClassName("resultsTable");
+
+                    for (let i = 0; i <= 1; i++) { 
+                      tables[i].innerHTML = ""}
+                  } else {
+                    text = ""
+                    showResults();
+                                    }
+                  document.getElementById("warning").innerHTML = text;
+                }
+
+// function showResults(){
+
+//   let targetResistance  = document.getElementById("targetResistance").value;;

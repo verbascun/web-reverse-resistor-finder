@@ -10,6 +10,8 @@
         justify-content: flex-start;
         background-color:#457278;
         /* overflow: hidden;  */
+        /* border-style: solid;
+        border-color: #000; */
     }
 
     h1{
@@ -29,6 +31,10 @@
         font-size: large;
         margin: 0.5%
 
+    }
+
+    #targetResistance{
+        margin:0.5%;
     }
 
     .results{
@@ -90,9 +96,11 @@
     }
 
     footer{
-        /* position:fixed; */
+        position:fixed;
         margin-top: auto;
         bottom:0;
+        /* border-style: solid;
+        border-color: #000; */
     }
 
 
@@ -117,7 +125,7 @@ svg{
   svg text{
     text-anchor: middle;
     dominant-baseline: middle;
-    font-size:xx-large;
+    font-size:70px;
     /* font-size: ; */
   }
 
