@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <Head>
-<title>web_resistor_calculator</title>
+<title>Reverse Resistor Finder</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <meta   charset =   "UTF-8" />
+<meta name="description" content="Designed to find odd resistor value using equivalent rtesistors in parallel or series circuit." />
+<meta name="keywords" content="resistor, resistors, finder, reverse, parallel, series, equivalent">
+<meta name="author" content="Piotr Szczepaniak">
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="" />
 
-
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </Head>
 <body>
@@ -15,7 +17,9 @@
 
 
   <h1>Parallel and Series reverse resistor finder</h1>
+  <hr>
   <p>Goal of this simple application is to find a specific equivalent resistor value using two serial or parallel connected resistors</p>
+  <hr>
   <label for="targetResistance"><strong>Target resistance:</strong></label> 
   <input type="text"  placeholder="target resistance" id = "targetResistance">
 
@@ -30,7 +34,7 @@
     <input type="radio" name="series" id="e24" value = "e24">E24
   </fieldset>
 
-
+<hr>
 <div class="results">
   <div class="column">
     <svg class="schematic"   viewBox="0 0 810 310  " xmlns="http://www.w3.org/2000/svg">
