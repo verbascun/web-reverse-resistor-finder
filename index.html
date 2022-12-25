@@ -8,32 +8,23 @@
 <meta name="keywords" content="resistor, resistors, finder, reverse, parallel, series, equivalent">
 <meta name="author" content="Piotr Szczepaniak">
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </Head>
 <body>
-
-
-
-  <h1>Parallel and Series reverse resistor finder</h1>
-  <hr>
-  <p>Goal of this simple application is to find a specific equivalent resistor value using two serial or parallel connected resistors</p>
-  <hr>
-  <label for="targetResistance"><strong>Target resistance:</strong></label> 
-  <input type="text"  placeholder="target resistance" id = "targetResistance">
-
-  <p id="warning"> </p>
-
-  <button  id="findButton"> Find resistors</button>
-
-
-  <fieldset>
-    <legend> Series </legend>
-    <input type="radio" name="series" id="e12" value = "e12" checked="checked">E12
-    <input type="radio" name="series" id="e24" value = "e24">E24
-  </fieldset>
-
+<h1>Parallel and Series reverse resistor finder</h1>
+<hr>
+<p>Goal of this simple application is to find a specific equivalent resistor value using two serial or parallel connected resistors</p>
+<hr>
+<label for="targetResistance"><strong>Target resistance:</strong></label> 
+<input type="text"  placeholder="target resistance" id = "targetResistance">
+<p id="warning"> </p>
+<button  id="findButton"> Find resistors</button>
+<fieldset>
+  <legend> Series </legend>
+  <input type="radio" name="series" id="e12" value = "e12" checked="checked">E12
+  <input type="radio" name="series" id="e24" value = "e24">E24
+</fieldset>
 <hr>
 <div class="results">
   <div class="column">
@@ -47,61 +38,21 @@
     </svg>  
     <table class="resultsTable"></table> 
   </div>
-
   <div class="column">
-  <svg class="schematic"   viewBox="0 0 810 310  " xmlns="http://www.w3.org/2000/svg">
-    <rect x= "55" y= "100"   width="300" height= "100"     fill="none" stroke-width="10"    stroke="rgb(0,0,0)"  stroke-linejoin="round"/>
-    <text x= "205" y= "150" class = "r1_text">R1</text>    
-    <rect x= "455" y= "100" width="300" height= "100"     fill="none" stroke-width="10"    stroke="rgb(0,0,0)"  stroke-linejoin="round"/>
-    <text x= "605" y= "150" class = "r2_text">R2</text> 
-    <path width="50%" height= "50%"   d="M355 150 H455 "    fill= "none" stroke="#000"
-    stroke-width="10" stroke-linejoin= "round">
-  </svg>  
-  <table class="resultsTable"></table> 
-
+    <svg class="schematic"   viewBox="0 0 810 310  " xmlns="http://www.w3.org/2000/svg">
+      <rect x= "55" y= "100"   width="300" height= "100"     fill="none" stroke-width="10"    stroke="rgb(0,0,0)"  stroke-linejoin="round"/>
+      <text x= "205" y= "150" class = "r1_text">R1</text>    
+      <rect x= "455" y= "100" width="300" height= "100"     fill="none" stroke-width="10"    stroke="rgb(0,0,0)"  stroke-linejoin="round"/>
+      <text x= "605" y= "150" class = "r2_text">R2</text> 
+      <path width="50%" height= "50%"   d="M355 150 H455 "    fill= "none" stroke="#000"
+      stroke-width="10" stroke-linejoin= "round">
+    </svg>  
+    <table class="resultsTable"></table> 
   </div>
-
- 
 </div>
-
-
-
-      
-      <table id = "tables">
-
-        <thead>
-
-          
-          
-
-  
-        </thead>
-      </table>
-
-       
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <footer>
-  <p>v0.1.0 <a href="https://github.com/verbascun">verbascun@github</a></p>
+  <p>v0.1.0 <a href="https://github.com/verbascun/web-reverse-resistor-finder">verbascun@github</a></p>
 </footer>
-
 <script type="text/javascript" src="script.js"></script>
-
 </body>
 </html> 
