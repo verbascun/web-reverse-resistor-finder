@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <Head>
     <title>Reverse Resistor Finder</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -10,47 +11,52 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="script.js" defer></script>
-
   </Head>
+
   <body>
     <h1>Parallel and Series reverse resistor finder</h1>
+
     <hr>
-    <p>Goal of this simple application is to find a specific equivalent resistor value using two serial or parallel connected resistors</p>
+    <p>Goal of this simple application is to find a specific equivalent resistor
+      value using two serial or parallel connected resistors</p>
     <hr>
-    <label for="targetResistance"><strong>Target resistance:</strong></label> 
-    <input type="text"  placeholder="target resistance" id = "targetResistance">
-    <p id="warning"> </p>
-    <button  id="findButton"> Find resistors</button>
+    <label for="targetResistance"><strong>Target resistance:</strong>
+    </label>
+    <input type="text" placeholder="target resistance" class="targetResistance">
+    <p id="warning"></p>
+    <button id="findButton">Find resistors</button>
     <fieldset>
-      <legend> Series </legend>
-      <input type="radio" name="series" id="e12" value = "e12" checked="checked">E12
-      <input type="radio" name="series" id="e24" value = "e24">E24
+      <legend>Series</legend>
+      <input type="radio" name="series" id="e12" value="e12" checked="checked">E12
+      <input type="radio" name="series" id="e24" value="e24">E24
     </fieldset>
     <hr>
     <div class="results">
       <div class="column">
-        <svg class="schematic"   viewBox="0 0 810 310  " xmlns="http://www.w3.org/2000/svg">
-          <rect x= "255" y= "5"   width="300" height= "100"     fill="none" stroke-width="10"    stroke="rgb(0,0,0)"  stroke-linejoin="round"/>
-          <text x= "405" y= "55" class = "r1_text">R1</text>    
-          <rect x= "255" y= "205" width="300" height= "100"     fill="none" stroke-width="10"    stroke="rgb(0,0,0)"  stroke-linejoin="round"/>
-          <text x= "405" y= "255" class = "r2_text">R2</text> 
-          <path width="50%" height= "50%"   d="M255 55H105v205h155m295 0h145v-205h-145"    fill= "none" stroke="#000" stroke-width="10" stroke-linejoin= "round">
-        </svg>  
-        <table class="resultsTable"></table> 
+        <svg class="schematic" viewBox="0 0 810 310  " xmlns="http://www.w3.org/2000/svg">
+          <rect x="255" y="5" width="300" height="100" fill="none" stroke-width="10" stroke="rgb(0,0,0)" stroke-linejoin="round" />
+          <text x="405" y="55" class="r1_text">R1</text>
+          <rect x="255" y="205" width="300" height="100" fill="none" stroke-width="10" stroke="rgb(0,0,0)" stroke-linejoin="round" />
+          <text x="405" y="255" class="r2_text">R2</text>
+          <path width="50%" height="50%" d="M255 55H105v205h155m295 0h145v-205h-145" fill="none" stroke="#000" stroke-width="10" stroke-linejoin="round">
+        </svg>
+        <table class="resultsTable"></table>
       </div>
       <div class="column">
-        <svg class="schematic"   viewBox="0 0 810 310  " xmlns="http://www.w3.org/2000/svg">
-          <rect x= "55" y= "100"   width="300" height= "100"     fill="none" stroke-width="10"    stroke="rgb(0,0,0)"  stroke-linejoin="round"/>
-          <text x= "205" y= "150" class = "r1_text">R1</text>    
-          <rect x= "455" y= "100" width="300" height= "100"     fill="none" stroke-width="10"    stroke="rgb(0,0,0)"  stroke-linejoin="round"/>
-          <text x= "605" y= "150" class = "r2_text">R2</text> 
-          <path width="50%" height= "50%"   d="M355 150 H455 "    fill= "none" stroke="#000" stroke-width="10" stroke-linejoin= "round">
-        </svg>  
-        <table class="resultsTable"></table> 
+        <svg class="schematic" viewBox="0 0 810 310  " xmlns="http://www.w3.org/2000/svg">
+          <rect x="55" y="100" width="300" height="100" fill="none" stroke-width="10" stroke="rgb(0,0,0)" stroke-linejoin="round" />
+          <text x="205" y="150" class="r1_text">R1</text>
+          <rect x="455" y="100" width="300" height="100" fill="none" stroke-width="10" stroke="rgb(0,0,0)" stroke-linejoin="round" />
+          <text x="605" y="150" class="r2_text">R2</text>
+          <path width="50%" height="50%" d="M355 150 H455 " fill="none" stroke="#000" stroke-width="10" stroke-linejoin="round">
+        </svg>
+        <table class="resultsTable"></table>
       </div>
     </div>
-  <footer>
-    <p>v0.1.0<a href="https://github.com/verbascun/web-reverse-resistor-finder">verbascun@github</a></p>
-  </footer>
+    <footer>
+      <p>v0.1.0<a href="https://github.com/verbascun/web-reverse-resistor-finder">verbascun@github</a>
+      </p>
+    </footer>
   </body>
-</html> 
+
+</html>

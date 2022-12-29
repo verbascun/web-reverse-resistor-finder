@@ -1,108 +1,113 @@
-html{
-    background-color:#457278;
+html {
+	background-color: #457278;
 }
+
 body {
-    margin:0;
-    width: 100vw;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: flex-start;
+	margin: 0;
+	width: 100vw;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: flex-start;
 }
 
-h1{
-    font-size: xx-large;
-    text-align: center;
-    margin: 0;
+h1 {
+	font-size: xx-large;
+	text-align: center;
+	margin: 0;
 }
 
-p{
-    font-size: medium;
-    margin: 0;
-    text-align: center;
-    
+p {
+	font-size: medium;
+	margin: 0;
+	text-align: center;
 }
 
-label{
-    font-size: x-large;
-    margin: 0.5%
-
-}
-
-#targetResistance{
-    margin:0.5%;
-}
-
-.results{
-
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;    
+label {
+	font-size: x-large;
+	margin: 0.5%;
 }
 
 button {
-    margin: 0.5%
-    }
+	margin: 0.5%;
+}
 
 fieldset {
-    border: solid black;
+	border: solid black;
 }
 
 table {
-    border-collapse: collapse;
-    border-color: black;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:#dafdc8;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
-    font-size: large;
+	border-collapse: collapse;
+	border-color: black;
+	margin: 5vh auto;
+	background-color: #dafdc8;
+	font-size: large;
 }
+
 td {
-    padding-left: 10px;
-    padding-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
-tr:nth-child(odd){background-color:#2b2b2b; color: aliceblue;}
-tr:not(:first-child):hover{background-color: #457278;} */
+
+tr:nth-child(odd) {
+	background-color: #2b2b2b;
+	color: aliceblue;
+}
+
+tr:not(:first-child):hover {
+	background-color: #457278;
+}
+
 th {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #2b2b2b;
-    color: white;
+	padding: 5px 10px 10px 5px;
+	background-color: #2b2b2b;
+	color: white;
 }
 
-path{
-    fill:none;stroke:#000;
-    stroke-width:10;stroke-linejoin:round
+path {
+	fill: none;
+	stroke: #000;
+	stroke-width: 10;
+	stroke-linejoin: round;
 }
 
-rect{
-    width: 400 ;
-    height: 100;
-    fill:none;
-    stroke-width:10;
-    stroke:rgb(0,0,0);
-    stroke-linejoin:round;
+rect {
+	width: 400;
+	height: 100;
+	fill: none;
+	stroke-width: 10;
+	stroke: rgb(0,0,0);
+	stroke-linejoin: round;
 }
-svg text{
-    text-anchor: middle;
-    dominant-baseline: middle;
-    font-size:70px;
+
+svg text {
+	text-anchor: middle;
+	dominant-baseline: middle;
+	font-size: 70px;
 }
-.schematic{
-    width: auto;
-    height: 15vh;
-    display: block;   
-    margin:auto;
-    margin-top: 1%;
+
+footer {
+	position: fixed;
+	margin-top: auto;
+	bottom: 0;
 }
-footer{
-    position:fixed;
-    margin-top: auto;
-    bottom:0;
+
+.targetResistance {
+	margin: 0.5%;
+}
+
+.schematic {
+	width: auto;
+	height: 15vh;
+	display: block;
+	margin: auto;
+}
+
+.results {
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
